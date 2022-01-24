@@ -29,8 +29,8 @@ let proximoValor = 0
 const display = () => {
     if(initValue.length > 16){
 
-      return document.querySelector('#display').innerText = 'ERROR' 
-    }
+       Object.freeze(initValue)
+   }
       
   else { 
   return document.querySelector('#display').innerText = initValue   
